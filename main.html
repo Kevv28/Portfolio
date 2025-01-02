@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Card Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* CSS CARD */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e1e1e, #2c3e50);
+      font-family: 'Poppins', sans-serif;
+      color: #FFFFFF;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 25px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 450px;
+      background: linear-gradient(to right, #2e8b7d, #20b2aa);
+      border-radius: 16px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      padding: 40px 30px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .image {
+      margin-bottom: 20px;
+    }
+
+    .image img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .content h1 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .content h2 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      font-family: 'Roboto', sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: #FFFFFF;
+      font-size: 22px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .icons a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px) scale(1.1);
+    }
+
+    .icons a i {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card-container">
+      <!-- Image Section -->
+      <div class="image">
+        <img src="public/images/125282403.jpeg" alt="Profile Image">
+      </div>
+      <!-- Content Section -->
+      <div class="content">
+        <h1>Kevil Rana</h1>
+        <h2>AI Researcher & Web Developer</h2>
+        <p>Hi there! I'm Kevil Rana, an AI researcher and web developer with a passion for solving complex problems through innovative solutions. With experience in both backend and frontend technologies, I specialize in creating efficient systems and user-friendly applications.</p>
+        <p>I have worked on impactful projects like DataExplorer and HealthInsights, Enhancing Mesothelioma Cancer Diagnosis through Ensemble Learning Techniques shows my commitment towards Research.</p>
+      </div>
+      <!-- Icons Section -->
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/kevil-rana-61379a240/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Kevv28" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="public/files/kevil_rana.pdf" target="_blank" title="Download CV">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
